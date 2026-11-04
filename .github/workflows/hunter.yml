@@ -1,8 +1,8 @@
 name: Oracle Cloud ARM VM Hunter
 
 on:
-  # schedule:
-  #   - cron: '*/5 * * * *' # Managed by Cloudflare Worker cron to prevent duplicate triggers
+   schedule:
+     - cron: '*/5 * * * *' # Managed by Cloudflare Worker cron to prevent duplicate triggers
   workflow_dispatch: # Allow manual or Cloudflare Worker triggering
 
 concurrency:
